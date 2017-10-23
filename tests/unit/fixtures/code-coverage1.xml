@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1508761703">
+  <project timestamp="1508761703">
+    <package name="G4\ValueObject">
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Base64Encoded.php">
+        <class name="Base64Encoded" namespace="G4\ValueObject">
+          <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="13" type="stmt" count="2"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="2"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="20" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <metrics loc="23" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Birthday.php">
+        <class name="Birthday" namespace="G4\ValueObject">
+          <metrics complexity="7" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="26" coveredelements="26"/>
+        </class>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="4" crap="4" count="5"/>
+        <line num="23" type="stmt" count="5"/>
+        <line num="25" type="stmt" count="5"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="3"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="3"/>
+        <line num="33" type="stmt" count="3"/>
+        <line num="34" type="stmt" count="3"/>
+        <line num="35" type="stmt" count="3"/>
+        <line num="40" type="method" name="getBirthday" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="45" type="method" name="get18" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="58" type="method" name="getAge" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="62" type="stmt" count="1"/>
+        <line num="63" type="stmt" count="1"/>
+        <metrics loc="64" ncloc="51" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="22" coveredstatements="22" elements="26" coveredelements="26"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/BooleanValue.php">
+        <class name="BooleanValue" namespace="G4\ValueObject">
+          <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        </class>
+        <line num="19" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="11"/>
+        <line num="21" type="stmt" count="11"/>
+        <line num="22" type="stmt" count="10"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="30" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <metrics loc="33" ncloc="22" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/CountryCode.php">
+        <class name="CountryCode" namespace="G4\ValueObject">
+          <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
+        </class>
+        <line num="38" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="40" type="stmt" count="2"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="49" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="54" type="method" name="getName" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="63" type="method" name="isValid" visibility="private" complexity="1" crap="1" count="2"/>
+        <line num="65" type="stmt" count="2"/>
+        <metrics loc="66" ncloc="49" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Dictionary.php">
+        <class name="Dictionary" namespace="G4\ValueObject">
+          <metrics complexity="19" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="33" elements="42" coveredelements="42"/>
+        </class>
+        <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="8"/>
+        <line num="19" type="stmt" count="8"/>
+        <line num="20" type="stmt" count="8"/>
+        <line num="26" type="method" name="get" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="37" type="method" name="getFromDeeperLevels" visibility="public" complexity="4" crap="4" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="55" type="method" name="has" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="57" type="stmt" count="4"/>
+        <line num="64" type="method" name="hasNonEmptyValue" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="73" type="method" name="hasInDeeperLevels" visibility="public" complexity="4" crap="4" count="1"/>
+        <line num="75" type="stmt" count="1"/>
+        <line num="76" type="stmt" count="1"/>
+        <line num="77" type="stmt" count="1"/>
+        <line num="78" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="80" type="stmt" count="1"/>
+        <line num="81" type="stmt" count="1"/>
+        <line num="82" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="92" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="103" type="method" name="anonymous function" complexity="1" crap="1" count="1"/>
+        <line num="104" type="stmt" count="1"/>
+        <line num="105" type="stmt" count="1"/>
+        <line num="112" type="method" name="toString" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="114" type="stmt" count="1"/>
+        <line num="115" type="stmt" count="1"/>
+        <line num="117" type="stmt" count="1"/>
+        <metrics loc="118" ncloc="80" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="33" elements="42" coveredelements="42"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/DomainName.php">
+        <class name="DomainName" namespace="G4\ValueObject">
+          <metrics complexity="11" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="29" coveredelements="29"/>
+        </class>
+        <line num="22" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="8"/>
+        <line num="24" type="stmt" count="8"/>
+        <line num="25" type="stmt" count="8"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="7"/>
+        <line num="29" type="stmt" count="7"/>
+        <line num="34" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="36" type="stmt" count="7"/>
+        <line num="43" type="method" name="diff" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="54" type="method" name="equals" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="62" type="method" name="getFirstLevelDomainName" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="1"/>
+        <line num="72" type="method" name="getTopLevelDomainName" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="74" type="stmt" count="1"/>
+        <line num="76" type="stmt" count="1"/>
+        <line num="83" type="method" name="append" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="93" type="method" name="prepend" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="95" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="103" type="method" name="isValid" visibility="private" complexity="2" crap="2" count="8"/>
+        <line num="105" type="stmt" count="8"/>
+        <line num="106" type="stmt" count="8"/>
+        <metrics loc="107" ncloc="70" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="20" elements="29" coveredelements="29"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Email.php">
+        <class name="Email" namespace="G4\ValueObject">
+          <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+        </class>
+        <line num="20" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="28" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <metrics loc="32" ncloc="24" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/EmailType.php">
+        <class name="EmailType" namespace="G4\ValueObject">
+          <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
+        </class>
+        <line num="14" type="method" name="__construct" visibility="public" complexity="3" crap="3" count="3"/>
+        <line num="16" type="stmt" count="3"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="3"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="3"/>
+        <line num="25" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="27" type="stmt" count="3"/>
+        <metrics loc="29" ncloc="29" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Environment.php">
+        <class name="Environment" namespace="G4\ValueObject">
+          <metrics complexity="8" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="22" coveredelements="22"/>
+        </class>
+        <line num="24" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="26" type="stmt" count="3"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="32" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="37" type="method" name="isProduction" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="42" type="method" name="isStage" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="47" type="method" name="isDev" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="52" type="method" name="isLocal" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="57" type="method" name="isValid" visibility="private" complexity="1" crap="1" count="3"/>
+        <line num="59" type="stmt" count="3"/>
+        <line num="60" type="stmt" count="3"/>
+        <line num="61" type="stmt" count="3"/>
+        <line num="62" type="stmt" count="3"/>
+        <line num="63" type="stmt" count="3"/>
+        <line num="64" type="stmt" count="3"/>
+        <metrics loc="65" ncloc="57" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="22" coveredelements="22"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/ErrorCodes.php">
+        <class name="ErrorCodes" namespace="G4\ValueObject">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="14" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Gender.php">
+        <class name="Gender" namespace="G4\ValueObject">
+          <metrics complexity="14" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="29" coveredelements="29"/>
+        </class>
+        <line num="35" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="21"/>
+        <line num="37" type="stmt" count="21"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="20"/>
+        <line num="41" type="stmt" count="20"/>
+        <line num="43" type="method" name="getGender" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="45" type="stmt" count="6"/>
+        <line num="48" type="method" name="getGenderName" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="50" type="stmt" count="2"/>
+        <line num="53" type="method" name="getGenderPlural" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="55" type="stmt" count="2"/>
+        <line num="58" type="method" name="getGenderType" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="60" type="stmt" count="2"/>
+        <line num="63" type="method" name="getOpposite" visibility="public" complexity="2" crap="2" count="6"/>
+        <line num="65" type="stmt" count="6"/>
+        <line num="66" type="stmt" count="6"/>
+        <line num="67" type="stmt" count="6"/>
+        <line num="70" type="method" name="getGenderTypeLowercase" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="72" type="stmt" count="2"/>
+        <line num="75" type="method" name="getGenderOppositeTypeLowercase" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="77" type="stmt" count="2"/>
+        <line num="80" type="method" name="getGenderKey" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="82" type="stmt" count="2"/>
+        <line num="85" type="method" name="getOppositeGenderKey" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="87" type="stmt" count="2"/>
+        <line num="90" type="method" name="createMale" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="95" type="method" name="createFemale" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="97" type="stmt" count="1"/>
+        <metrics loc="99" ncloc="94" classes="1" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="29" coveredelements="29"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/IntegerNumber.php">
+        <class name="IntegerNumber" namespace="G4\ValueObject">
+          <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="19" type="method" name="__construct" visibility="public" complexity="3" crap="3" count="8"/>
+        <line num="21" type="stmt" count="8"/>
+        <line num="22" type="stmt" count="6"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="27" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="35" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <metrics loc="38" ncloc="27" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Ip.php">
+        <class name="Ip" namespace="G4\ValueObject">
+          <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="20" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="28" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="method" name="isValid" visibility="private" complexity="1" crap="1" count="3"/>
+        <line num="35" type="stmt" count="3"/>
+        <metrics loc="36" ncloc="28" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Md5.php">
+        <class name="Md5" namespace="G4\ValueObject">
+          <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="20" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="23" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="31" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="40" type="method" name="calculateMd5" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <metrics loc="43" ncloc="29" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Pathname.php">
+        <class name="Pathname" namespace="G4\ValueObject">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="8" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/RealPath.php">
+        <class name="RealPath" namespace="G4\ValueObject">
+          <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
+        </class>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="4"/>
+        <line num="23" type="stmt" count="4"/>
+        <line num="24" type="stmt" count="4"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="3"/>
+        <line num="33" type="method" name="append" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="41" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="43" type="stmt" count="3"/>
+        <line num="50" type="method" name="diff" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <metrics loc="54" ncloc="35" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/RelativePath.php">
+        <class name="RelativePath" namespace="G4\ValueObject">
+          <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+        </class>
+        <line num="25" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="36" type="method" name="__toString" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="48" type="method" name="join" visibility="public" complexity="1" crap="1" count="5"/>
+        <line num="50" type="stmt" count="5"/>
+        <metrics loc="51" ncloc="34" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/SemanticVersioning.php">
+        <class name="SemanticVersioning" namespace="G4\ValueObject">
+          <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="19" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="7"/>
+        <line num="21" type="stmt" count="7"/>
+        <line num="22" type="stmt" count="6"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="31" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="40" type="method" name="isValid" visibility="private" complexity="2" crap="2" count="7"/>
+        <line num="42" type="stmt" count="7"/>
+        <metrics loc="43" ncloc="28" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/StringLiteral.php">
+        <class name="StringLiteral" namespace="G4\ValueObject">
+          <metrics complexity="9" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="17" coveredelements="17"/>
+        </class>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="12"/>
+        <line num="23" type="stmt" count="12"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="11"/>
+        <line num="28" type="stmt" count="11"/>
+        <line num="30" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="32" type="stmt" count="10"/>
+        <line num="40" type="method" name="append" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="50" type="method" name="equals" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="58" type="method" name="isEmpty" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="68" type="method" name="prepend" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <metrics loc="72" ncloc="47" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="17" coveredelements="17"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Url.php">
+        <class name="Url" namespace="G4\ValueObject">
+          <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+        </class>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="33" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <metrics loc="36" ncloc="25" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Uuid.php">
+        <class name="Uuid" namespace="G4\ValueObject">
+          <metrics complexity="4" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+        </class>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="23" type="stmt" count="3"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="33" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="41" type="method" name="generate" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <metrics loc="44" ncloc="30" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </file>
+    </package>
+    <package name="G4\ValueObject\Exception">
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidBase64EncodedException.php">
+        <class name="InvalidBase64EncodedException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <metrics loc="19" ncloc="19" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidBirthdayException.php">
+        <class name="InvalidBirthdayException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="11" type="stmt" count="2"/>
+        <line num="12" type="stmt" count="2"/>
+        <line num="13" type="stmt" count="2"/>
+        <line num="14" type="stmt" count="2"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidBooleanException.php">
+        <class name="InvalidBooleanException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="11" type="stmt" count="10"/>
+        <line num="12" type="stmt" count="10"/>
+        <line num="13" type="stmt" count="10"/>
+        <line num="14" type="stmt" count="10"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidCountryCodeException.php">
+        <class name="InvalidCountryCodeException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <metrics loc="18" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidDictionaryException.php">
+        <class name="InvalidDictionaryException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidDomainNameException.php">
+        <class name="InvalidDomainNameException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <metrics loc="22" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidEmailException.php">
+        <class name="InvalidEmailException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidEnvironment.php">
+        <class name="InvalidEnvironment" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidGenderException.php">
+        <class name="InvalidGenderException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidIntegerNumberException.php">
+        <class name="InvalidIntegerNumberException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="14" type="stmt" count="6"/>
+        <line num="15" type="stmt" count="6"/>
+        <line num="16" type="stmt" count="6"/>
+        <line num="17" type="stmt" count="6"/>
+        <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidIpException.php">
+        <class name="InvalidIpException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="18" type="stmt" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <metrics loc="22" ncloc="18" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidMd5Exception.php">
+        <class name="InvalidMd5Exception" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidSemanticVersioningException.php">
+        <class name="InvalidSemanticVersioningException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="13" type="stmt" count="6"/>
+        <line num="14" type="stmt" count="6"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidStringLiteralException.php">
+        <class name="InvalidStringLiteralException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidUrlException.php">
+        <class name="InvalidUrlException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/InvalidUuidException.php">
+        <class name="InvalidUuidException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <metrics loc="16" ncloc="16" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/MissingDirsException.php">
+        <class name="MissingDirsException" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/Users/draskogomboc/www/dev/value-object/src/Exception/PathDoesNotExist.php">
+        <class name="PathDoesNotExist" namespace="G4\ValueObject\Exception">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+    </package>
+    <file name="/Users/draskogomboc/www/dev/value-object/src/NumberInterface.php">
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Users/draskogomboc/www/dev/value-object/src/StringInterface.php">
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <metrics files="41" loc="1388" ncloc="1107" classes="37" methods="101" coveredmethods="100" conditionals="0" coveredconditionals="0" statements="264" coveredstatements="259" elements="365" coveredelements="359"/>
+  </project>
+</coverage>
