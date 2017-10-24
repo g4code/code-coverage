@@ -10,8 +10,14 @@ class MetricsData
 
     const ONE_HUNDRED = 100;
 
+    /**
+     * @var IntegerNumber
+     */
     private $covered;
 
+    /**
+     * @var IntegerNumber
+     */
     private $total;
 
     /**
@@ -30,6 +36,6 @@ class MetricsData
      */
     public function percentage()
     {
-        return self::ONE_HUNDRED * ($this->covered->getValue() / $this->total->getValue());
+        return (int) self::ONE_HUNDRED * ($this->covered->getValue() / $this->total->getValue());
     }
 }
