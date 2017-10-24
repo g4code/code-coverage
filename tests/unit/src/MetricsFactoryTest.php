@@ -1,6 +1,6 @@
 <?php
 
-
+use G4\ValueObject\IntegerNumber;
 use G4\CodeCoverage\MetricsFactory;
 use G4\CodeCoverage\Metrics;
 
@@ -17,6 +17,11 @@ class MetricsFactoryTest extends PHPUnit_Framework_TestCase
      */
     private $metricsFactory;
 
+    /**
+     * @var PHPUnit_Framework_MockObject_MockObject
+     */
+    private $requiredPercentageMock;
+
     public function testCreate()
     {
         $this->assertInstanceOf(Metrics::class, $this->metricsFactory->create());
@@ -30,13 +35,19 @@ class MetricsFactoryTest extends PHPUnit_Framework_TestCase
                     <metrics files="41" loc="1388" ncloc="1107" classes="37" methods="101" coveredmethods="100" conditionals="0" coveredconditionals="0" statements="264" coveredstatements="259" elements="365" coveredelements="359"/>
                 </project>
             </coverage>';
+
+        $this->requiredPercentageMock = $this->getMockBuilder(IntegerNumber::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+
         $this->metricsData      = new SimpleXMLElement($data);
-        $this->metricsFactory   = new MetricsFactory($this->metricsData);
+        $this->metricsFactory   = new MetricsFactory($this->metricsData, $this->requiredPercentageMock);
     }
 
     protected function tearDown()
     {
-        $this->metricsData      = null;
-        $this->metricsFactory   = null;
+        $this->requiredPercentageMock   = null;
+        $this->metricsData              = null;
+        $this->metricsFactory           = null;
     }
 }

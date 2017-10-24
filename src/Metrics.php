@@ -9,6 +9,11 @@ class Metrics
 {
 
     /**
+     * @var IntegerNumber
+     */
+    private $requiredPercentage;
+
+    /**
      * @var MetricsData
      */
     private $elements;
@@ -28,22 +33,27 @@ class Metrics
      * @param MetricsData $methods
      * @param MetricsData $statements
      * @param MetricsData $elements
+     * @param IntegerNumber $condition
      */
-    public function __construct(MetricsData $methods, MetricsData $statements, MetricsData $elements)
-    {
-        $this->methods      = $methods;
-        $this->statements   = $statements;
-        $this->elements     = $elements;
+    public function __construct(
+        MetricsData $methods,
+        MetricsData $statements,
+        MetricsData $elements,
+        IntegerNumber $requiredPercentage
+    ) {
+        $this->methods              = $methods;
+        $this->statements           = $statements;
+        $this->elements             = $elements;
+        $this->requiredPercentage   = $requiredPercentage;
     }
 
     /**
-     * @param IntegerNumber $requiredPercentage
      * @return bool
      */
-    public function meetsTheCondition(IntegerNumber $requiredPercentage)
+    public function meetsTheCondition()
     {
-        return $this->methods->percentage()     >= $requiredPercentage->getValue()
-            && $this->statements->percentage()  >= $requiredPercentage->getValue()
-            && $this->elements->percentage()    >= $requiredPercentage->getValue();
+        return $this->methods->percentage()     >= $this->requiredPercentage->getValue()
+            && $this->statements->percentage()  >= $this->requiredPercentage->getValue()
+            && $this->elements->percentage()    >= $this->requiredPercentage->getValue();
     }
 }

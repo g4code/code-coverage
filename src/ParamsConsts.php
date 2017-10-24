@@ -15,4 +15,7 @@ class ParamsConsts
     const COVEREDSTATEMENTS = 'coveredstatements';
     const ELEMENTS          = 'elements';
     const COVEREDELEMENTS   = 'coveredelements';
+
+    const FILE              = 'file';
+    const PERCENTAGE        = 'percentage';
 }
