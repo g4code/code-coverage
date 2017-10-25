@@ -50,6 +50,14 @@ class MetricsTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($this->metrics->meetsTheCondition());
     }
 
+    public function testGetters()
+    {
+        $this->assertInstanceOf(MetricsData::class, $this->metrics->getElements());
+        $this->assertInstanceOf(MetricsData::class, $this->metrics->getMethods());
+        $this->assertInstanceOf(MetricsData::class, $this->metrics->getStatements());
+        $this->assertInstanceOf(IntegerNumber::class, $this->metrics->getRequiredPercentage());
+    }
+
     protected function setUp()
     {
         $this->elementsMock = $this->getMockBuilder(MetricsData::class)
