@@ -1,9 +1,17 @@
 #!/usr/bin/env php
 <?php
 
-chdir(dirname(__DIR__));
+$possibleAutoloadPaths = [
+    join(DIRECTORY_SEPARATOR, [__DIR__, '..', 'autoload.php']),
+    join(DIRECTORY_SEPARATOR, [__DIR__, '..', 'vendor', 'autoload.php'])
+];
 
-require_once realpath(join(DIRECTORY_SEPARATOR, ['vendor', 'autoload.php']));
+foreach ($possibleAutoloadPaths as $autoloadPath) {
+    if (file_exists($autoloadPath)) {
+        require_once realpath($autoloadPath);
+        break;
+    }
+}
 
 use G4\CodeCoverage\Runner;
 use Garden\Cli\Cli;
