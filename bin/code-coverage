@@ -3,15 +3,23 @@
 
 $possibleAutoloadPaths = [
     join(DIRECTORY_SEPARATOR, [__DIR__, '..', 'autoload.php']),
+    join(DIRECTORY_SEPARATOR, [__DIR__, '..', '..', '..', 'autoload.php']),
     join(DIRECTORY_SEPARATOR, [__DIR__, '..', 'vendor', 'autoload.php'])
 ];
-
-foreach ($possibleAutoloadPaths as $autoloadPath) {
-    if (file_exists($autoloadPath)) {
-        require_once realpath($autoloadPath);
+$autoloadPath = null;
+foreach ($possibleAutoloadPaths as $oneAutoloadPath) {
+    if (file_exists($oneAutoloadPath)) {
+        $autoloadPath = $oneAutoloadPath;
         break;
     }
 }
+
+if ($autoloadPath === null) {
+    fputs(STDERR, "Missing autoload file!\n");
+    exit();
+}
+
+require_once realpath($autoloadPath);
 
 use G4\CodeCoverage\Runner;
 use Garden\Cli\Cli;
