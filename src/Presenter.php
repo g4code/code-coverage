@@ -7,11 +7,20 @@ use Emanci\ConsoleColor\ConsoleColor;
 class Presenter
 {
 
+    /**
+     * @var ConsoleColor
+     */
     private $consoleColor;
 
+    /**
+     * @var Metrics
+     */
     private $metrics;
 
-
+    /**
+     * Presenter constructor.
+     * @param Metrics $metrics
+     */
     public function __construct(Metrics $metrics)
     {
         $this->metrics      = $metrics;
@@ -20,15 +29,25 @@ class Presenter
 
     public function stdOud()
     {
-        $message = $this->consoleColor->white()->greenBackground()->render('OK') . PHP_EOL;
-        fputs(STDOUT, $message);
+        foreach ($this->makeMetricsFormatter()->format() as $message) {
+            fputs(STDOUT, $this->consoleColor->white()->greenBackground()->render($message));
+        }
         exit(0);
     }
 
     public function stdErr()
     {
-        $message = $this->consoleColor->white()->redBackground()->render('NOK') . PHP_EOL;
-        fputs(STDERR, $message);
+        foreach ($this->makeMetricsFormatter()->format() as $message) {
+            fputs(STDOUT, $this->consoleColor->white()->redBackground()->render($message));
+        }
         exit(1);
+    }
+
+    /**
+     * @return MetricsFormatter
+     */
+    public function makeMetricsFormatter()
+    {
+        return new MetricsFormatter($this->metrics);
     }
 }

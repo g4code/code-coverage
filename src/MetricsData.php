@@ -1,6 +1,5 @@
 <?php
 
-
 namespace G4\CodeCoverage;
 
 use G4\ValueObject\IntegerNumber;
@@ -32,10 +31,13 @@ class MetricsData
     }
 
     /**
-     * @return int
+     * @return float
      */
     public function percentage()
     {
-        return (int) self::ONE_HUNDRED * ($this->covered->getValue() / $this->total->getValue());
+        return round(
+            self::ONE_HUNDRED * ($this->covered->getValue() / $this->total->getValue()),
+            2
+        );
     }
 }

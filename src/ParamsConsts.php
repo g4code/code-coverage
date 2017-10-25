@@ -18,4 +18,7 @@ class ParamsConsts
 
     const FILE              = 'file';
     const PERCENTAGE        = 'percentage';
+
+    const EXIT_SUCCESS      = 0;
+    const EXIT_ERROR        = 1;
 }

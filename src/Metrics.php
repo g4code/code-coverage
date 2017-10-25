@@ -1,6 +1,5 @@
 <?php
 
-
 namespace G4\CodeCoverage;
 
 use G4\ValueObject\IntegerNumber;
@@ -45,6 +44,38 @@ class Metrics
         $this->statements           = $statements;
         $this->elements             = $elements;
         $this->requiredPercentage   = $requiredPercentage;
+    }
+
+    /**
+     * @return MetricsData
+     */
+    public function getMethods()
+    {
+        return $this->methods;
+    }
+
+    /**
+     * @return MetricsData
+     */
+    public function getElements()
+    {
+        return $this->elements;
+    }
+
+    /**
+     * @return MetricsData
+     */
+    public function getStatements()
+    {
+        return $this->statements;
+    }
+
+    /**
+     * @return IntegerNumber
+     */
+    public function getRequiredPercentage()
+    {
+        return $this->requiredPercentage;
     }
 
     /**
