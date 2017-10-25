@@ -16,7 +16,7 @@ foreach ($possibleAutoloadPaths as $oneAutoloadPath) {
 
 if ($autoloadPath === null) {
     fputs(STDERR, "Missing autoload file!\n");
-    exit();
+    exit(1);
 }
 
 require_once realpath($autoloadPath);
