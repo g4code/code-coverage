@@ -13,3 +13,4 @@ before_script:
 script:
     - composer psr2
     - composer test-report
+    - composer code-coverage
