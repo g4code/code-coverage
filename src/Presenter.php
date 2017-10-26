@@ -20,11 +20,12 @@ class Presenter
     /**
      * Presenter constructor.
      * @param Metrics $metrics
+     * @param ConsoleColor $consoleColor
      */
-    public function __construct(Metrics $metrics)
+    public function __construct(Metrics $metrics, ConsoleColor $consoleColor)
     {
         $this->metrics      = $metrics;
-        $this->consoleColor = new ConsoleColor();
+        $this->consoleColor = $consoleColor;
     }
 
     public function stdOud()
@@ -38,7 +39,7 @@ class Presenter
     public function stdErr()
     {
         foreach ($this->makeMetricsFormatter()->format() as $message) {
-            fputs(STDOUT, $this->consoleColor->white()->redBackground()->render($message));
+            fputs(STDERR, $this->consoleColor->white()->redBackground()->render($message));
         }
         exit(1);
     }

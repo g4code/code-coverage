@@ -2,7 +2,7 @@
 
 namespace G4\CodeCoverage;
 
-use Colors\Color;
+use Emanci\ConsoleColor\ConsoleColor;
 use G4\ValueObject\IntegerNumber;
 use G4\ValueObject\RealPath;
 use Garden\Cli\Args;
@@ -62,6 +62,6 @@ class Runner
      */
     public function makePresenter(Metrics $metrics)
     {
-        return new Presenter($metrics);
+        return new Presenter($metrics, new ConsoleColor());
     }
 }
