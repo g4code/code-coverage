@@ -31,7 +31,7 @@ class Runner
         $presenter  = $this->makePresenter($metrics);
 
         $metrics->meetsTheCondition()
-            ? $presenter->stdOud()
+            ? $presenter->stdOut()
             : $presenter->stdErr();
     }
 
@@ -62,6 +62,6 @@ class Runner
      */
     public function makePresenter(Metrics $metrics)
     {
-        return new Presenter($metrics, new ConsoleColor());
+        return new Presenter($metrics, new Console(new ConsoleColor()));
     }
 }

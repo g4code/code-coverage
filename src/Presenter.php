@@ -2,15 +2,15 @@
 
 namespace G4\CodeCoverage;
 
-use Emanci\ConsoleColor\ConsoleColor;
+use G4\ValueObject\StringLiteral;
 
 class Presenter
 {
 
     /**
-     * @var ConsoleColor
+     * @var Console
      */
-    private $consoleColor;
+    private $console;
 
     /**
      * @var Metrics
@@ -20,28 +20,28 @@ class Presenter
     /**
      * Presenter constructor.
      * @param Metrics $metrics
-     * @param ConsoleColor $consoleColor
+     * @param Console $console
      */
-    public function __construct(Metrics $metrics, ConsoleColor $consoleColor)
+    public function __construct(Metrics $metrics, Console $console)
     {
-        $this->metrics      = $metrics;
-        $this->consoleColor = $consoleColor;
-    }
-
-    public function stdOud()
-    {
-        foreach ($this->makeMetricsFormatter()->format() as $message) {
-            fputs(STDOUT, $this->consoleColor->white()->greenBackground()->render($message));
-        }
-        exit(0);
+        $this->metrics  = $metrics;
+        $this->console  = $console;
     }
 
     public function stdErr()
     {
         foreach ($this->makeMetricsFormatter()->format() as $message) {
-            fputs(STDERR, $this->consoleColor->white()->redBackground()->render($message));
+            $this->console->putsErr(new StringLiteral($message));
         }
-        exit(1);
+        $this->console->exitWithCode(ExitCode::error());
+    }
+
+    public function stdOut()
+    {
+        foreach ($this->makeMetricsFormatter()->format() as $message) {
+            $this->console->putsOut(new StringLiteral($message));
+        }
+        $this->console->exitWithCode(ExitCode::success());
     }
 
     /**
