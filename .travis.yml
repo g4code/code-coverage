@@ -11,4 +11,5 @@ before_script:
     - composer install --prefer-source
 
 script:
+    - composer psr2
     - composer test-report
