@@ -12,6 +12,12 @@ composer require g4/code-coverage
 
 ## Usage
 
+Before running code-coverage, run phpunit with --coverage-clover option to generate code-coverage xml file
+
+```sh
+./vendor/bin/phpunit --coverage-clover=path/to/code-coverage.xml
+```
+
 ```sh
 usage: code-coverage [<options>]
 
@@ -24,8 +30,13 @@ OPTIONS
                      covered.
 
 e.g.
-./vendor/bin/code-coverage -p 90 -f tests/unit/coverage/code-coverage.xml
+./vendor/bin/code-coverage -p 90 -f path/to/code-coverage.xml
 
+output:
+ Required:     90.00%
+   Methods:    91.43%
+   Statements: 95.58%
+   Elements:   94.59%
 ```
 
 ## Development
@@ -36,7 +47,7 @@ e.g.
 
 ### Run tests
 
-    $ make unit-tests
+    $ composer unit-test
 
 ## License
 

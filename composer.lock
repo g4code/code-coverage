@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ccc55f019ce90ecaa37eeda84c58936",
+    "content-hash": "d10fdbc0ff95533d9b4d5922414ddd14",
     "packages": [
         {
             "name": "emanci/console-color",
@@ -54,16 +54,16 @@
         },
         {
             "name": "g4/value-object",
-            "version": "2.20.0",
+            "version": "2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/g4code/value-object.git",
-                "reference": "7919f02c7c342aa0e1169c894b6689acaad9a56e"
+                "reference": "c4600128fa21a82fc09193705a9e5e8734d43388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/g4code/value-object/zipball/7919f02c7c342aa0e1169c894b6689acaad9a56e",
-                "reference": "7919f02c7c342aa0e1169c894b6689acaad9a56e",
+                "url": "https://api.github.com/repos/g4code/value-object/zipball/c4600128fa21a82fc09193705a9e5e8734d43388",
+                "reference": "c4600128fa21a82fc09193705a9e5e8734d43388",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 }
             ],
             "description": "PHP value objects",
-            "time": "2017-10-24T09:53:27+00:00"
+            "time": "2017-10-25T07:42:30+00:00"
         },
         {
             "name": "paragonie/random_compat",

@@ -14,7 +14,7 @@
         }
     },
     "require": {
-        "g4/value-object"       : "2.*",
+        "g4/value-object"       : "*",
         "vanilla/garden-cli"    : "1.*",
         "emanci/console-color"  : "1.*"
     },
