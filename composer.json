@@ -14,9 +14,9 @@
         }
     },
     "require": {
-        "g4/value-object"       : "*",
-        "vanilla/garden-cli"    : "1.*",
-        "emanci/console-color"  : "1.*"
+        "g4/value-object"           : "*",
+        "vanilla/garden-cli"        : "1.*",
+        "questocat/console-color"   : "1.*"
     },
     "require-dev": {
         "phpunit/phpunit"           : "5.*",
