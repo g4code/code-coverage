@@ -2,7 +2,7 @@
 
 namespace G4\CodeCoverage;
 
-use Emanci\ConsoleColor\ConsoleColor;
+use Questocat\ConsoleColor\ConsoleColor;
 use G4\ValueObject\IntegerNumber;
 use G4\ValueObject\RealPath;
 use Garden\Cli\Args;
