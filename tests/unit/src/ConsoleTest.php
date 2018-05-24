@@ -2,7 +2,7 @@
 
 
 use G4\CodeCoverage\Console;
-use Emanci\ConsoleColor\ConsoleColor;
+use Questocat\ConsoleColor\ConsoleColor;
 
 class ConsoleTest extends PHPUnit_Framework_TestCase
 {
