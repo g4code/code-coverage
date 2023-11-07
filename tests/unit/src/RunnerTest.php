@@ -7,7 +7,7 @@ use G4\CodeCoverage\Reader;
 use G4\CodeCoverage\Metrics;
 use G4\CodeCoverage\Presenter;
 
-class RunnerTest extends PHPUnit_Framework_TestCase
+class RunnerTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
@@ -25,7 +25,7 @@ class RunnerTest extends PHPUnit_Framework_TestCase
     {
         $this->argsMock->expects($this->once())
             ->method('getOpt')
-            ->will($this->onConsecutiveCalls('tests/unit/fixtures/code-coverage.xml'));
+            ->will($this->onConsecutiveCalls(__DIR__ . '/../fixtures/code-coverage.xml'));
 
         $this->assertInstanceOf(Reader::class, $this->runner->makeReader());
     }
@@ -36,7 +36,7 @@ class RunnerTest extends PHPUnit_Framework_TestCase
             ->method('getOpt')
             ->will($this->onConsecutiveCalls(90));
 
-        $xml = simplexml_load_file('tests/unit/fixtures/code-coverage.xml');
+        $xml = simplexml_load_file(__DIR__ . '/../fixtures/code-coverage.xml');
 
         $this->assertInstanceOf(Metrics::class, $this->runner->makeMetrics($xml));
     }
@@ -52,7 +52,7 @@ class RunnerTest extends PHPUnit_Framework_TestCase
 
     public function testRun()
     {
-        $xml = simplexml_load_file('tests/unit/fixtures/code-coverage.xml');
+        $xml = simplexml_load_file(__DIR__ . '/../fixtures/code-coverage.xml');
 
         $readerMock = $this->getMockBuilder(Reader::class)
             ->disableOriginalConstructor()
@@ -74,7 +74,7 @@ class RunnerTest extends PHPUnit_Framework_TestCase
 
         $runnerMock = $this->getMockBuilder(Runner::class)
             ->disableOriginalConstructor()
-            ->setMethods(['makeReader', 'makeMetrics', 'makePresenter'])
+            ->onlyMethods(['makeReader', 'makeMetrics', 'makePresenter'])
             ->getMock();
 
         $runnerMock->expects($this->once())->method('makeReader')->willReturn($readerMock);
@@ -84,7 +84,7 @@ class RunnerTest extends PHPUnit_Framework_TestCase
         $runnerMock->run();
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->argsMock = $this->getMockBuilder(Args::class)
             ->disableOriginalConstructor()
@@ -93,7 +93,7 @@ class RunnerTest extends PHPUnit_Framework_TestCase
         $this->runner = new Runner($this->argsMock);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->argsMock = null;
         $this->runner   = null;

@@ -4,7 +4,7 @@
 use G4\CodeCoverage\MetricsData;
 use G4\ValueObject\IntegerNumber;
 
-class MetricsDataTest extends PHPUnit_Framework_TestCase
+class MetricsDataTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
@@ -30,7 +30,7 @@ class MetricsDataTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(50.0, $this->metricsData->percentage());
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->coveredIntegerNumberMock = $this->getMockBuilder(IntegerNumber::class)
             ->disableOriginalConstructor()
@@ -43,7 +43,7 @@ class MetricsDataTest extends PHPUnit_Framework_TestCase
         $this->metricsData = new MetricsData($this->totalIntegerNumberMock, $this->coveredIntegerNumberMock);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->coveredIntegerNumberMock     = null;
         $this->totalIntegerNumberMock       = null;

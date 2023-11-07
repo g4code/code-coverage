@@ -1,0 +1,6 @@
+.idea
+composer.lock
+tests/unit/.phpunit.result.cache
+tests/unit/.phpunit.cache
+tests/unit/coverage
+vendor/

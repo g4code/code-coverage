@@ -14,26 +14,27 @@
         }
     },
     "require": {
+        "php": ">=8.2",
         "g4/value-object"           : "*",
-        "vanilla/garden-cli"        : "1.*",
+        "vanilla/garden-cli"        : "4.*",
         "questocat/console-color"   : "1.*"
     },
     "require-dev": {
-        "phpunit/phpunit"           : "5.*",
+        "phpunit/phpunit"           : "10.*",
         "squizlabs/php_codesniffer" : "3.*"
     },
     "scripts": {
         "unit-test": [
-            "./vendor/bin/phpunit -c tests/unit/phpunit.xml --coverage-html tests/unit/coverage"
+            "XDEBUG_MODE=coverage ./vendor/bin/phpunit -c tests/unit/phpunit.xml --coverage-html tests/unit/coverage"
         ],
         "test-coverage": [
-            "./vendor/bin/phpunit --colors=always -c tests/unit/phpunit.xml --coverage-text"
+            "XDEBUG_MODE=coverage ./vendor/bin/phpunit --colors=always -c tests/unit/phpunit.xml --coverage-text"
         ],
         "test-report": [
-            "./vendor/bin/phpunit --colors=always -c tests/unit/phpunit.xml --coverage-clover=tests/unit/coverage/code-coverage.xml"
+            "XDEBUG_MODE=coverage ./vendor/bin/phpunit --colors=always -c tests/unit/phpunit.xml --coverage-clover=tests/unit/coverage/code-coverage.xml"
         ],
         "code-coverage": [
-            "./bin/code-coverage -p 85 -f tests/unit/coverage/code-coverage.xml"
+            "XDEBUG_MODE=coverage ./bin/code-coverage -p 85 -f tests/unit/coverage/code-coverage.xml"
         ],
         "psr2": [
             "./vendor/bin/phpcs --colors --standard=PSR2 src/"

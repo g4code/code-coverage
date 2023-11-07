@@ -4,7 +4,7 @@ use G4\CodeCoverage\Reader;
 use G4\ValueObject\RealPath;
 use G4\CodeCoverage\Exceptions\InvalidXmlFileFormatException;
 
-class ReaderTest extends \PHPUnit_Framework_TestCase
+class ReaderTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
@@ -41,7 +41,7 @@ class ReaderTest extends \PHPUnit_Framework_TestCase
         $this->reader->read();
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->reportPathMock = $this->getMockBuilder(RealPath::class)
             ->disableOriginalConstructor()
@@ -50,7 +50,7 @@ class ReaderTest extends \PHPUnit_Framework_TestCase
         $this->reader = new Reader($this->reportPathMock);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->reportPathMock   = null;
         $this->reader           = null;
