@@ -8,7 +8,7 @@ class ReaderTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var RealPath&\PHPUnit\Framework\MockObject\MockObject
      */
     private $reportPathMock;
 

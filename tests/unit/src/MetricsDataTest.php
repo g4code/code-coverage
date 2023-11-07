@@ -8,12 +8,12 @@ class MetricsDataTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var IntegerNumber&\PHPUnit\Framework\MockObject\MockObject
      */
     private $coveredIntegerNumberMock;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var IntegerNumber&\PHPUnit\Framework\MockObject\MockObject
      */
     private $totalIntegerNumberMock;
 

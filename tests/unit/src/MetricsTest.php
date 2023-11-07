@@ -8,17 +8,17 @@ class MetricsTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var MetricsData&\PHPUnit\Framework\MockObject\MockObject
      */
     private $elementsMock;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var MetricsData&\PHPUnit\Framework\MockObject\MockObject
      */
     private $methodsMock;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var MetricsData&\PHPUnit\Framework\MockObject\MockObject
      */
     private $statementsMock;
 
@@ -28,7 +28,7 @@ class MetricsTest extends \PHPUnit\Framework\TestCase
     private $metrics;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var IntegerNumber&\PHPUnit\Framework\MockObject\MockObject
      */
     private $requiredPercentageMock;
 

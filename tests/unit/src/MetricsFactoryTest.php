@@ -18,7 +18,7 @@ class MetricsFactoryTest extends \PHPUnit\Framework\TestCase
     private $metricsFactory;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var IntegerNumber&\PHPUnit\Framework\MockObject\MockObject
      */
     private $requiredPercentageMock;
 

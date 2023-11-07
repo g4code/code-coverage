@@ -20,12 +20,12 @@ class MetricsFormatterTest extends \PHPUnit\Framework\TestCase
     private $metricsFormatter;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var MetricsData&\PHPUnit\Framework\MockObject\MockObject
      */
     private $metricsDataMock;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var IntegerNumber&\PHPUnit\Framework\MockObject\MockObject
      */
     private $requiredPercentageMock;
 
