@@ -4,21 +4,21 @@ use G4\ValueObject\IntegerNumber;
 use G4\CodeCoverage\Metrics;
 use G4\CodeCoverage\MetricsData;
 
-class MetricsTest extends PHPUnit_Framework_TestCase
+class MetricsTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var MetricsData&\PHPUnit\Framework\MockObject\MockObject
      */
     private $elementsMock;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var MetricsData&\PHPUnit\Framework\MockObject\MockObject
      */
     private $methodsMock;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var MetricsData&\PHPUnit\Framework\MockObject\MockObject
      */
     private $statementsMock;
 
@@ -28,7 +28,7 @@ class MetricsTest extends PHPUnit_Framework_TestCase
     private $metrics;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var IntegerNumber&\PHPUnit\Framework\MockObject\MockObject
      */
     private $requiredPercentageMock;
 
@@ -58,7 +58,7 @@ class MetricsTest extends PHPUnit_Framework_TestCase
         $this->assertInstanceOf(IntegerNumber::class, $this->metrics->getRequiredPercentage());
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->elementsMock = $this->getMockBuilder(MetricsData::class)
             ->disableOriginalConstructor()
@@ -84,7 +84,7 @@ class MetricsTest extends PHPUnit_Framework_TestCase
         );
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->elementsMock             = null;
         $this->methodsMock              = null;

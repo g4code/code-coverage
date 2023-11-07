@@ -4,7 +4,7 @@ use G4\ValueObject\IntegerNumber;
 use G4\CodeCoverage\MetricsFactory;
 use G4\CodeCoverage\Metrics;
 
-class MetricsFactoryTest extends PHPUnit_Framework_TestCase
+class MetricsFactoryTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
@@ -18,7 +18,7 @@ class MetricsFactoryTest extends PHPUnit_Framework_TestCase
     private $metricsFactory;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var IntegerNumber&\PHPUnit\Framework\MockObject\MockObject
      */
     private $requiredPercentageMock;
 
@@ -27,7 +27,7 @@ class MetricsFactoryTest extends PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Metrics::class, $this->metricsFactory->create());
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $data = '<?xml version="1.0" encoding="UTF-8"?>
             <coverage generated="1508761703">
@@ -44,7 +44,7 @@ class MetricsFactoryTest extends PHPUnit_Framework_TestCase
         $this->metricsFactory   = new MetricsFactory($this->metricsData, $this->requiredPercentageMock);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->requiredPercentageMock   = null;
         $this->metricsData              = null;

@@ -7,21 +7,21 @@ use G4\CodeCoverage\Metrics;
 use G4\CodeCoverage\MetricsFormatter;
 use G4\ValueObject\StringLiteral;
 
-class PresenterTest extends PHPUnit_Framework_TestCase
+class PresenterTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var Console&\PHPUnit\Framework\MockObject\MockObject
      */
     private $consoleMock;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var Metrics&\PHPUnit\Framework\MockObject\MockObject
      */
     private $metricsMock;
 
     /**
-     * @var PHPUnit_Framework_MockObject_MockObject
+     * @var MetricsFormatter&\PHPUnit\Framework\MockObject\MockObject
      */
     private $metricsFormatterMock;
 
@@ -30,6 +30,10 @@ class PresenterTest extends PHPUnit_Framework_TestCase
      */
     private $presenter;
 
+    /**
+     * @var (Presenter&\PHPUnit\Framework\MockObject\MockObject)|\PHPUnit\Framework\MockObject\MockObject
+     */
+    private $presenterMock;
 
     public function testMakeMetricsFormatter()
     {
@@ -62,7 +66,7 @@ class PresenterTest extends PHPUnit_Framework_TestCase
         $this->presenterMock->stdOut();
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->metricsMock = $this->getMockBuilder(Metrics::class)
             ->disableOriginalConstructor()
@@ -80,11 +84,11 @@ class PresenterTest extends PHPUnit_Framework_TestCase
 
         $this->presenterMock = $this->getMockBuilder(Presenter::class)
             ->setConstructorArgs([$this->metricsMock, $this->consoleMock])
-            ->setMethods(['makeMetricsFormatter'])
+            ->onlyMethods(['makeMetricsFormatter'])
             ->getMock();
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->metricsMock              = null;
         $this->consoleMock              = null;

@@ -4,7 +4,7 @@
 use G4\CodeCoverage\ExitCode;
 use G4\CodeCoverage\Exceptions\InvalidExitCodeException;
 
-class ExitCodeTest extends PHPUnit_Framework_TestCase
+class ExitCodeTest extends \PHPUnit\Framework\TestCase
 {
 
     public function testError()
