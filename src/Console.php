@@ -24,7 +24,7 @@ class Console
      */
     public function putsErr(StringLiteral $message)
     {
-        fputs(STDERR, $this->consoleColor->white()->redBackground()->render((string) $message));
+        fwrite(STDERR, $this->consoleColor->white()->redBackground()->render((string) $message) ?:'' );
     }
 
     /**
@@ -32,7 +32,7 @@ class Console
      */
     public function putsOut(StringLiteral $message)
     {
-        fputs(STDOUT, $this->consoleColor->white()->greenBackground()->render((string) $message));
+        fwrite(STDOUT, $this->consoleColor->white()->greenBackground()->render((string) $message) ?: '');
     }
 
     /**
