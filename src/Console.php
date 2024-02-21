@@ -8,31 +8,21 @@ use G4\ValueObject\StringLiteral;
 class Console
 {
 
-    /**
-     * @var ConsoleColor
-     */
-    private $consoleColor;
-
+    private ConsoleColor $consoleColor;
 
     public function __construct(ConsoleColor $consoleColor)
     {
         $this->consoleColor = $consoleColor;
     }
 
-    /**
-     * @param $message
-     */
     public function putsErr(StringLiteral $message)
     {
-        fwrite(STDERR, $this->consoleColor->white()->redBackground()->render((string) $message) ?:'' );
+        $this->consoleColor->white()->redBackground()->render((string) $message);
     }
 
-    /**
-     * @param $message
-     */
     public function putsOut(StringLiteral $message)
     {
-        fwrite(STDOUT, $this->consoleColor->white()->greenBackground()->render((string) $message) ?: '');
+        $this->consoleColor->white()->greenBackground()->render((string) $message);
     }
 
     /**
